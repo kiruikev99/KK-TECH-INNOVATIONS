@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background-color: black;
+    padding: 10px 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background-color: rgba(0, 255, 8, 0.079);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    
+}
+
+.image img {
+    border-radius: 8px;
+}
+
+.information ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    align-items: center;
+}
+
+.information li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.information li a:hover {
+    background-color: #88ff008f;
+}
+
+.contact-button {
+    background-color: #5be73c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #c0392b;
+}
+.content{
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+    COLOR: white;
+}
+.text-area{
+    display: flex;
+    padding: 100px;
+    text-align: center;
+}
+.left-area{
+   
+    text-align: center;
+}
+.left-area > button {
+    background-color: transparent;
+    padding: 10px 45px;
+    border: none;
+    font-size: x-large;
+    color: rgb(89, 255, 0);
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.left-area > h1{
+  
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.left-area > h6{
+    color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.about{
+    background-color: #0000000c;
+    height: 120vh;
+    color: white;
+   
+}
+.content-about{
+    padding: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.small-text{
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.flex-about{
+    display: flex;
+}
+.contents-about{
+    font-size: x-large;
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.display-icons{
+    display: flex;
+    gap: 50px;
+}
+.users, .security, .chevron{
+background-color: rgba(0, 128, 0, 0.184);
+width: 270px;
+padding: 10px;
+box-shadow: 0 4px 8px rgba(97, 205, 133, 0.573);
+font-size: 20px;
+
+}
+
+.img-text{
+    display: block;
+}
+.languages{
+    background-image: url(images/programm.jpg);
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    
+
+}
+.context{
+    opacity: 0.5;
+     font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-size: large;
+    width: 50%;
+    
+}
+.inside-area{
+    background-color: rgba(0, 128, 0, 0.184);
+    padding: 20px;
+
+
+}
+.sm-text{
+    font-size: x-large;
+    color: greenyellow;
+    font-family: "Jura", sans-serif;
+}
+.skill-bar {
+    margin-bottom: 1.5rem;
+   
+}
+
+.skill-name {
+    font-weight: bold;
+    font-family: "Jura", sans-serif;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    width: 0;
+    background: linear-gradient(90deg, #0c390d, #67b26f);
+    transition: width 1.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Add class to trigger animation */
+.animate {
+    width: var(--progress) !important;
+}
+.title-para{
+    margin-top: 130px;
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    font-family: "Jura", sans-serif;
+}
+.title-para > p{
+    opacity: 0.6;
+}
+.video-sections{
+    color: white;
+}
+.yy {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    padding: 20px;
+    background-color: #000000; /* Background for section */
+}
+
+/* Card styling */
+.card {
+    width: 720px;
+    padding: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #0000000e;
+    position: relative;
+    color: greenyellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}/* Right and bottom borders */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 4px; /* Right border thickness */
+    background-color: green;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%; /* Half bottom border */
+    height: 4px; /* Bottom border thickness */
+    background-color: green;
+}
+
+/* Video styling */
+.card video {
+    width: 110%;
+    height: auto; /* Maintain video aspect ratio */
+}
+#vida{
+    width: 100%;
+    height: auto;
+
+}
+
+/* Card content */
+.card-content {
+    padding: 15px;
+}
+
+/* Title styling */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #57e719;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.card-text {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.5;
+}
