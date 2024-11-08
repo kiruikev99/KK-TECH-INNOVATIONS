@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     background-color: black;
     padding: 10px 10px;
@@ -115,7 +116,7 @@ nav {
     display: flex;
 }
 .contents-about{
-    font-size: x-large;
+    font-size: large;
     font-family: "Jura", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
@@ -127,10 +128,10 @@ nav {
 }
 .users, .security, .chevron{
 background-color: rgba(0, 128, 0, 0.184);
-width: 270px;
+max-width: 150px;
 padding: 10px;
 box-shadow: 0 4px 8px rgba(97, 205, 133, 0.573);
-font-size: 20px;
+font-size: 15px;
 
 }
 
@@ -138,13 +139,16 @@ font-size: 20px;
     display: block;
 }
 .languages{
-    background-image: url(images/programm.jpg);
+    background-image: url(images/green.jpg);
     background-position: center;
-    height: 100vh;
+    height: 150vh;
     background-size: cover;
     color: white;
     
 
+}
+.flex-languages{
+    padding: 50px;
 }
 .context{
     opacity: 0.5;
@@ -219,7 +223,7 @@ font-size: 20px;
 }
 .yy {
     display: flex;
-    flex-wrap: wrap;
+    
     gap: 20px; /* Space between cards */
     justify-content: center;
     padding: 20px;
@@ -287,4 +291,114 @@ font-size: 20px;
     font-size: 0.9rem;
     color: #ccc;
     line-height: 1.5;
+}
+.prices{
+    background-image: url(images/bgprice.jpg);
+    background-position: center;
+    height: 150vh;
+    background-size: cover;
+    color: white;
+}
+.bg-prices{
+    background-image: url(images/freepik.jpeg);
+    background-position: center;
+    height: 80vh;
+    border-radius: 50px;
+    width: 60vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+
+}
+.bg-prices1{
+    background-image: url(images/deex.jpeg);
+    background-position: center;
+    border-radius: 50px;
+    opacity: 0.5;
+    height: 107vh;
+    width: 60vh;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+
+}
+.content-prices{
+    text-align: left;
+    background-color: #ffffff;
+    width: 40vh;
+    padding: 40px;
+    color: #000000;
+    
+}
+.content-prices > h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+
+}
+.header-prices{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.basic {
+    color: green;
+}
+.premium{
+    color: goldenrod;
+}
+.lists > ul{
+    font-family: "Noto Sans", sans-serif;
+    
+    
+    
+}
+li {
+    padding-bottom: 10px;
+}
+.headings{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+.lists > h5 {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.headings p {
+    font-size: 20px;
+}
+.content-prices > h4 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.lists > button{
+    background-color: #5be73c;
+    border: none;
+    padding: 10px 30px;
+
+}
+.content-prices > h3 {
+    text-align: left;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 19px;
+    font-style: normal;
+    color: red;
+
 }

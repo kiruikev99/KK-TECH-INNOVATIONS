@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="style1.css">
     <meta charset="UTF-8">
 
     <link rel="icon" type="image/png" href="images/K.png">
@@ -215,7 +215,7 @@
     <section class="yy">
     <div class="card">
         <video  controls>
-            <source src="images/Magram2.mp4" type="video/mp4">
+            <source autoplay src="images/Magram2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div  class="card-content">
@@ -241,7 +241,7 @@
     
     <div class="card">
         <video controls>
-            <source src="images/Magram2.mp4" type="video/mp4">
+            <source src="images/riverside.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="card-content">
@@ -250,6 +250,66 @@
                 This is a simple card layout with a video, title, and paragraph. It’s a great way to showcase media content alongside some descriptive text.
             </p>
         </div>
+    </div>
+</section>
+
+
+<section class="prices">
+    <div class="headings">
+        <h1><b>Simple and Affordable<br>Pricing Plans</b></h1>
+        <p>Venture in your Website Today!</p>
+    </div>
+    <div class="header-prices">
+        <div class="bg-prices">
+            <br><br><br>
+            <div class="content-prices">
+                <img width="55" src="images/box.png">
+                <h4 class="basic"><b>Basic Package</b></h4>
+                <h1><b>Ksh 12,500/=</b></h1>
+                <div class="lists">
+                <h5>Suitable for small businesses or startups with a simple online presence.</h5>
+
+                    <ul>
+                       <li>Sample Webiste Designs</li>
+                       <li>Mobile responsive design for optimal viewing on all devices.</li>
+                       <li>Basic SEO</li>
+                       <li>Logo design if needed</li>
+                       <li>Functional Contact Us</li>
+                       
+                    </ul>
+                    <button>Get In Touch </button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="bg-prices1">
+          
+            <div class="content-prices">
+            <h3><b>COMING SOON</b></h3>
+                <img width="55" src="images/jewelry.png">
+                <h4 class="premium"><b>Premium Package</b></h4>
+                <h1><b>Ksh 28,000/=</b></h1>
+                <div class="lists">
+                    <h5>Perfect for established businesses with extensive online needs and e-commerce functionality.</h5>
+                    <ul>
+                       <li>Sample Webiste Designs</li>
+                       <li>Mobile responsive design for optimal viewing on all devices.</li>
+                       <li>Advanced SEO</li>
+                       <li>Functional Contact Us</li>
+                       <li>Payments Integration.</li>
+                       <li>E-commerce integration for online product sales</li>
+                       <li>Administrative dashboard.</li>
+                       <li>SEO optimization for improved search visibility.</li>
+                    </ul>
+                    <button>Get In Touch </button>
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
 </section>
 </body>
