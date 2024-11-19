@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="style1.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
 
     <link rel="icon" type="image/png" href="images/K.png">
@@ -11,21 +11,49 @@
 </head>
 
 <body>
-    <nav>
-        <div class="image">
-            <img width="160" src="images/K.png" alt="KK Tech Logo">
-        </div>
-        <div class="information">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#languages">Languages & Tools</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact" class="contact-button">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav>
+  <div class="image">
+    <img  src="images/K.png" alt="KK Tech Logo">
+  </div>
+  <div class="information">
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <button onclick="myFunction()">Toggle Light Mode</button>
+    </ul>
+    <script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("body");
+}
+</script>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <img src="images/menu2.png" width="200" alt="Menu Icon">
+  </div>
+</nav>
 
+
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.information ul');
+    menu.classList.toggle('show');
+  }
+
+  // Hide the menu when clicking outside of it
+  document.addEventListener('click', function(event) {
+    const menu = document.querySelector('.information ul');
+    const isClickInsideMenu = menu.contains(event.target);
+    const isClickOnHamburger = document.querySelector('.hamburger').contains(event.target);
+
+    // If the click is outside the menu and the hamburger icon, close the menu
+    if (!isClickInsideMenu && !isClickOnHamburger) {
+      menu.classList.remove('show');
+    }
+  });
+</script>
     <section class="content">
         <div class="text-area">
             <div class="left-area">
@@ -79,6 +107,7 @@
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi incidunt ipsa adipisci.</p>
                         </div>
+                        <br>
                         <div class="security    ">
                             <div class="img-text">
                                 <img width="60" src="images/security.png" alt="user">
@@ -87,6 +116,7 @@
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi incidunt ipsa adipisci.</p>
                         </div>
+                        <br>
                         <div class="chevron">
                             <div class="img-text">
                                 <img width="60" src="images/chevron.png" alt="user">
@@ -96,6 +126,7 @@
 
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi incidunt ipsa adipisci.</p>
                         </div>
+                        <br><br><br><br>
                     </div>
 
                 </div>
@@ -107,112 +138,13 @@
 
     </section>
 
-    <section class="languages">
-        <div class="flex-languages">
-            <div class="left-language">
-                <div class="small-text">
-                    <h1>Languages & Tools
-                </div>
-                <div class="context">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore recusandae modi
-                    molestias id
-                    officiis ipsum ratione laudantium possimus eos repellat quis, porro, fugit odit! Ad tempora iure rem
-                    libero?
-                </div>
-                <br>
-            </div>
-            <div class="right-area">
-                <div class="inside-area">
-                    <div class="skill-bar">
-                        <div class="skill-name">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="--progress: 90%"></div>
-                        </div>
-                    </div>
 
-                    <div class="skill-bar">
-                        <div class="skill-name">
-                            <span>CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="--progress: 80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div class="skill-name">
-                            <span>React</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="--progress: 75%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div class="skill-name">
-                            <span>Laravel</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="--progress: 70%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div class="skill-name">
-                            <span>PHP</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="--progress: 80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div class="skill-name">
-                            <span>NodeJS</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="--progress: 50%"></div>
-                        </div>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div class="skill-name">
-                            <span>JavaScript</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress" style="--progress: 50%"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="outer-area">
-
-
-                </div>
-            </div>
+    <div class="projo">
+            <h1>PROJECTS</h1>
         </div>
-        <div class="projects-area">
-            <div class="title-para">
-                <h1><b>Projects</b></h1>
-                <p>Videos and Description of Projects Done</p>
-            </div>
-        </div>
-    </section>
-
-
-
-
 
     <section class="yy">
+        
     <div class="card">
         <video  controls>
             <source autoplay src="images/Magram2.mp4" type="video/mp4">
@@ -245,7 +177,7 @@
             Your browser does not support the video tag.
         </video>
         <div class="card-content">
-            <h2 class="card-title">MAGRAM INTERNATIONAL HEALTHCARE WEBSITE</h2>
+            <h2 class="card-title">RIVERSIDE HOSTEL MANAGMENT SYSTEM WEBSITE</h2>
             <p class="card-text">
                 This is a simple card layout with a video, title, and paragraph. It’s a great way to showcase media content alongside some descriptive text.
             </p>
@@ -265,7 +197,7 @@
             <div class="content-prices">
                 <img width="55" src="images/box.png">
                 <h4 class="basic"><b>Basic Package</b></h4>
-                <h1><b>Ksh 12,500/=</b></h1>
+                <h1><b>Ksh 15,500/=</b></h1>
                 <div class="lists">
                 <h5>Suitable for small businesses or startups with a simple online presence.</h5>
 
@@ -283,6 +215,7 @@
 
 
         </div>
+        <br><br><br>
 
         <div class="bg-prices1">
           
@@ -312,6 +245,58 @@
 
     </div>
 </section>
+
+
+
+<footer>
+  <div class="footer-container">
+    <!-- Logo Section -->
+    <div class="footer-logo">
+     <img width="200" src="images/kk.jpg">
+           <p>KK TECH INNOVATIONS</p>
+    </div>
+
+    <!-- Link Sections -->
+    <div class="footer-links">
+      <h3>WEBSITE THEMES</h3>
+      <a href="#">Weebly Themes</a>
+      <a href="#">Pre-Sale FAQs</a>
+      <a href="#">Submit a Ticket</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>SERVICES</h3>
+      <a href="#">Services</a>
+      <a href="#">Theme Tweak</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>SHOWCASE</h3>
+      <a href="#">Showcase</a>
+      <a href="#">Widgetkit</a>
+      <a href="#">Support</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>ABOUT US</h3>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Affiliates</a>
+      <a href="#">Resources</a>
+    </div>
+  </div>
+
+  <!-- Social Media Icons -->
+  <!--  -->
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    &copy; Copyright. All rights reserved.
+  </div>
+</footer>
+
+
+
 </body>
 <script>
     // Add animation class after a small delay to ensure DOM is loaded
